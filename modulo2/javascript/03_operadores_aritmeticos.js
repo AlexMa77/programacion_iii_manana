@@ -43,3 +43,4 @@ console.log("Operadores Logicos");
 console.log("AND &&", "5"<=5 && "5"===5);
 console.log("OR ||", "5"<=5 || "6"===4);
 console.log("NEGACION !", !(5==5));
+

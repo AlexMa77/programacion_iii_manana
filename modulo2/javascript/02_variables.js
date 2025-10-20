@@ -28,6 +28,7 @@ persona = {nombre:"Alex", edad:18}
 console.log("Variable Objeto",persona);
 console.log("Tipo de variable", typeof (persona));
 
+
 numeros=[12,12,22,24,4,4]
 console.log("Variable Array",numeros);
 console.log("Tipo de variable", typeof (numeros));
