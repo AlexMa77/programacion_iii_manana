@@ -7,3 +7,16 @@ document.getElementById("crear").addEventListener("click", () => {
 document.getElementById("eliminar").addEventListener("click", () =>{
     if (parrafo) parrafo.remove();
 })
+
+function saludar () {
+    alert ("Hola desde una funcion")
+}
+document.getElementById("parrafo")
+    .addEventListener("dbclick", () =>{
+    alert ("Ss hizo doble click en el parrafo")
+})
+
+document.getElementById('nombre')
+    .addEventListener('input', (e) =>{
+    console.log("Escribiendo", e.target.value)
+})
