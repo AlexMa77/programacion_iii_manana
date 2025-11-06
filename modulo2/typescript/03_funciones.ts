@@ -11,3 +11,7 @@ const sumar = (a: number, b: number): number => {
 }
 
 console.log(sumar(5, 5));
+
+function saludarDeNuevo(): void{
+    console.log('Hola')
+}
