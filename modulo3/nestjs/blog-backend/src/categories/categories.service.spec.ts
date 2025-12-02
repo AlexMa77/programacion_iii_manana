@@ -15,4 +15,4 @@ describe('CategoriesService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
-});                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+});
