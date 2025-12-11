@@ -6,7 +6,7 @@ export default function LoginWithLimit() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const passwordSaved = "12345";
-  const emailSaved = "andryzambrano1709@gmail.com";
+  const emailSaved = "alexmacias@gmail.com";
 
   const handleAccess = () => {
     if (attempts >= 3) return;
