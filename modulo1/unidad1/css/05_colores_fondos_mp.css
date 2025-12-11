@@ -1,0 +1,14 @@
+.fondo {
+    color: white;
+    background-image: url('fondo_casa.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-color: #004d40;
+    padding: 300px;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 48px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 15px;
+}

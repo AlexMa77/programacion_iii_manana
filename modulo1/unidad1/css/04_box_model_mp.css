@@ -1,0 +1,14 @@
+.caja_box_model {
+    width: 250px;
+    height: 120px;
+    border: 5px solid #004d40;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #c8e6c9;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+    border-radius: 10px;
+}

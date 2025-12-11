@@ -1,0 +1,32 @@
+.texto_primario {
+    color: #004d40;
+    background-color: #c8e6c9;
+    font-size: 26px;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    line-height: 1.8;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.texto_secundario {
+    color: #1565c0;
+    background-color: #e3f2fd;
+    font-size: 24px;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    line-height: 1.7;
+    text-decoration: overline;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+}
