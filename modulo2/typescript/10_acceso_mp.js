@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var _09_acceso_mp_1 = require("./09_acceso_mp");
+var miCasa = new _09_acceso_mp_1.Casa('Av. Amazonas 123');
+console.log(miCasa.direccion);
+console.log(miCasa.getCodigoInterno());
+console.log(miCasa.getAtributos());
+var otraCasa = new _09_acceso_mp_1.Casa('Calle Quito 456');
+console.log(otraCasa.direccion);
+console.log(otraCasa.getCodigoInterno());
+console.log(otraCasa.getAtributos());

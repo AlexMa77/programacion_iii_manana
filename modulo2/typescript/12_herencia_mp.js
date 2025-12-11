@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var _11_herencia_mp_1 = require("./11_herencia_mp");
+var miCasa = new _11_herencia_mp_1.Propiedad('Calle Los Pinos 45', 'Casa');
+console.log(miCasa.direccion);
+console.log(miCasa.tipo);
+miCasa.mostrar();
+var miDepartamento = new _11_herencia_mp_1.Departamento('Av. Los Robles 789', 'Departamento');
+console.log(miDepartamento.direccion);
+console.log(miDepartamento.tipo);
+miDepartamento.mostrar();
