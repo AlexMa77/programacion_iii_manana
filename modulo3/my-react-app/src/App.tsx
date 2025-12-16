@@ -1,9 +1,9 @@
-import ParentAreaTriangulo from "./props/ParentAreaTriangulo";
+import JuegoGusanito from "./useRef/jueguito";
 
 function App() {
   return (
     <>
-      <ParentAreaTriangulo />
+      <JuegoGusanito />
     </>
   );
 }
