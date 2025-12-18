@@ -1,9 +1,9 @@
-import JuegoGusanito from "./useRef/jueguito";
-
+import TablaMultiplicar from "./useCallback/TablaMultiplicar";
 function App() {
   return (
     <>
-      <JuegoGusanito />
+      <TablaMultiplicar numero={4} />
+
     </>
   );
 }

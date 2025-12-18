@@ -1,13 +1,13 @@
+
 import { useRef, useEffect } from 'react';
 
 export default function MoverCaja() {
-  const boxRef = useRef<HTMLDivElement | null>(null);
+  const boxRef = useRef<HTMLElementDivElement | null> (null);
   const position = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
-    const mover = (e: KeyboardEvent) => {
+    const mover = (e) => {
       const paso = 10;
-
       switch (e.key) {
         case 'ArrowUp':
           position.current.y -= paso;
@@ -25,10 +25,8 @@ export default function MoverCaja() {
           return;
       }
 
-      if (boxRef.current) {
-        boxRef.current.style.transform = 
-          `translate(${position.current.x}px, ${position.current.y}px)`;
-      }
+      const box = boxRef.current;
+      box.style.transform = `translate(${position.current.x}px, ${position.current.y}px)`;
     };
 
     window.addEventListener('keydown', mover);
@@ -44,7 +42,7 @@ export default function MoverCaja() {
         backgroundColor: 'deepskyblue',
         borderRadius: '50%',
         position: 'relative',
-        transition: 'transform 0.1s ease',
+        transition: 'transform 0.1s ease'
       }}
     />
   );
