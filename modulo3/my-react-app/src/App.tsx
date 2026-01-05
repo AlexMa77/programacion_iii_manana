@@ -1,9 +1,9 @@
-import TablaMultiplicar from "./useCallback/TablaMultiplicar";
+import SalarioSemanal from "./useState/HorasCalculoSalario";
+
 function App() {
   return (
     <>
-      <TablaMultiplicar numero={4} />
-
+      <SalarioSemanal />
     </>
   );
 }
