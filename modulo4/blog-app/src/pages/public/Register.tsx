@@ -1,15 +1,60 @@
-import { Box, TextField, Button } from "@mui/material";
-import type { JSX } from "react";
+import { Alert, Button, Paper, Stack, TextField, Typography } from "@mui/material";
+import { useState, type JSX } from "react";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
 
 export default function Register(): JSX.Element {
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState<string | null>(null);
+
+  const { register } = useAuth();
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      setError(null);
+      await register({ username, email, password });
+      navigate("/dashboard", { replace: true });
+    } catch {
+      setError("No se pudo registrar. Revisa los datos o intenta más tarde.");
+    }
+  };
+
   return (
-    <Box sx={{ maxWidth: 400, margin: "0 auto", padding: 2 }}>
-      <h1>Registro</h1>
-      <TextField label="Email" fullWidth margin="normal" />
-      <TextField label="Contraseña" type="password" fullWidth margin="normal" />
-      <Button variant="contained" fullWidth sx={{ marginTop: 2 }}>
-        Registrarse
-      </Button>
-    </Box>
+    <Paper sx={{ p: 3, maxWidth: 520, mx: "auto" }}>
+      <Stack spacing={2} component="form" onSubmit={handleSubmit}>
+        <Typography variant="h5">Registro</Typography>
+
+        {error ? <Alert severity="error">{error}</Alert> : null}
+
+        <TextField
+          label="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          required
+        />
+
+        <TextField
+          label="Email"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+
+        <TextField
+          label="Password"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+
+        <Button type="submit" variant="contained">Registrar</Button>
+      </Stack>
+    </Paper>
   );
 }

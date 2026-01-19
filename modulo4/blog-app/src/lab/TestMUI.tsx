@@ -1,4 +1,3 @@
-import type { JSX } from "react";
 import { useMemo, useState } from "react";
 import {
     Alert,
@@ -75,3 +74,4 @@ export default function TestMUI(): JSX.Element {
         </ThemeProvider>
     );
 }
+F
